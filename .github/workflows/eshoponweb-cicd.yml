@@ -67,6 +67,11 @@ jobs:
       with:
         name: bicep-template
         path: bicep-template
+
+- name: Install Azure CLI
+  run: |
+    curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+
         
    #Login in your azure subscription using a service principal (credentials stored as GitHub Secret in repo)
     - name: Azure Login
